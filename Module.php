@@ -67,7 +67,7 @@ class Module extends AbstractModule
         $result = $connection->executeQuery($sql);
 
         $messenger = new Messenger();
-        $messenger->addWarning("Now re-index fulltext search.");
+        $messenger->addWarning("Now please reindex fulltext search via ADMIN/Settings.");
     }
 
     public function uninstall(ServiceLocatorInterface $serviceLocator)
@@ -89,7 +89,7 @@ class Module extends AbstractModule
         $result = $connection->executeQuery($sql);
 
         $messenger = new Messenger();
-        $messenger->addWarning("Now re-index fulltext search.");
+        $messenger->addWarning("Now please reindex fulltext search via ADMIN/Settings.");
     }
 
     protected function manageSettings($settings, $process, $key = 'config')
