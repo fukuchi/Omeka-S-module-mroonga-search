@@ -36,11 +36,6 @@ for further information.
 Please do not forget to rename the directory from `Omeka-S-mroonga-search` to
 `MroongaSearch` in the `modules` directory.
 
-### After the installation
-
-After the installation, you are required to re-index the search index from
-the 'Settings' menu of the admin dashboard.
-
 
 Notes
 -----

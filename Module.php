@@ -65,9 +65,6 @@ class Module extends AbstractModule
 
         $sql = "ALTER TABLE fulltext_search ADD CONSTRAINT $fkeyName FOREIGN KEY ( `owner_id` ) REFERENCES `user` ( `id` ) ON DELETE SET NULL";
         $result = $connection->executeQuery($sql);
-
-        $messenger = new Messenger();
-        $messenger->addWarning("Now please reindex fulltext search via ADMIN/Settings.");
     }
 
     public function uninstall(ServiceLocatorInterface $serviceLocator)
@@ -87,9 +84,6 @@ class Module extends AbstractModule
 
         $sql = "ALTER TABLE fulltext_search ADD CONSTRAINT $fkeyName FOREIGN KEY ( `owner_id` ) REFERENCES `user` ( `id` ) ON DELETE SET NULL";
         $result = $connection->executeQuery($sql);
-
-        $messenger = new Messenger();
-        $messenger->addWarning("Now please reindex fulltext search via ADMIN/Settings.");
     }
 
     protected function manageSettings($settings, $process, $key = 'config')
