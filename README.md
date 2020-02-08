@@ -5,12 +5,20 @@ Mroonga search is a module for [Omeka S](https://omeka.org/s/) that enables
 CJK-ready full-text search by activating the [Mroonga](https://mroonga.org/)
 plugin of MySQL or MariaDB.
 
+The default installation of the full-text search feature of the Omeka-S is not
+CJK (Chinese, Japanese, Korean) ready because of the limiation of the database
+engine (MySQL or MariaDB). The Mroonga plugin extend the database to achieve
+CJK-ready search. This module simply activates this plugin by modifying the
+table information that internally used by Omeka-S.
+
 Installation
 ------------
 
-Before installing this module, install and configure to enable Mroonga storage
-engine. For example, if you use MariaDB on Debian or Ubuntu machine, install
-'mariadb-plugin-mroonga' package. Please read the
+### Preparation
+
+Before installing this module, install and configure the Mroonga plugin to
+enable Mroonga storage engine. For example, if you use MariaDB on Debian or
+Ubuntu machine, install 'mariadb-plugin-mroonga' package. Please read the
 [official document](https://mroonga.org/docs/install.html) for further
 information.
 
