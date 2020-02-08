@@ -16,11 +16,15 @@ Installation
 
 ### Preparation
 
+First of all, **backup the database**. This module modifies the table schema,
+and that may cause unrecoverable failure.
+
 Before installing this module, install and configure the Mroonga plugin to
 enable Mroonga storage engine. For example, if you use MariaDB on Debian or
 Ubuntu machine, install 'mariadb-plugin-mroonga' package. Please read the
 [official document](https://mroonga.org/docs/install.html) for further
 information.
+
 
 ### From ZIP
 
