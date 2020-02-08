@@ -33,10 +33,10 @@ for further information.
 
 ### From GitHub
 
-Please do not forget to rename the installed directory from
-`Omeka-S-mroonga-search` to `MroongaSearch` in the `modules` directory.
+Please do not forget to rename the directory from `Omeka-S-mroonga-search` to
+`MroongaSearch` in the `modules` directory.
 
-### Re-index
+### After the installation
 
 After the installation, you are required to re-index the search index from
 the 'Settings' menu of the admin dashboard.
@@ -49,8 +49,17 @@ This module highly depends on the database structure of Omeka-S 2.x. If you are
 upgrading Omeka-S from 2.x to 3.x or later, we highly recommend you to
 uninstall this module **before upgrading**.
 
-
-ToDo
-----
+We have not heavily tested Mroonga engine with large sized data yet. For
+advanced full-text search, we recommend you to check the
+[Solr module](https://omeka.org/s/modules/Solr/).
 
 Currently, this module uses the default N-gram parser. MeCab or any parsers are not supported yet.
+
+
+Licensing information
+---------------------
+
+Copyright (c) 2020 Kentaro Fukuchi
+
+This module is released under the MIT License. See the `LICENSE` file for the
+details.
