@@ -44,8 +44,8 @@ Please do not forget to rename the directory from `Omeka-S-mroonga-search` to
 Notes
 -----
 
-This module highly depends on the database structure of Omeka-S 2.x. If you are
-upgrading Omeka-S from 2.x to 3.x or later, we highly recommend you to
+This module highly depends on the database structure of Omeka-S 3.x. If you are
+upgrading Omeka-S from 3.x to 4.x or later, we highly recommend you to
 uninstall this module **before upgrading**.
 
 We have not heavily tested Mroonga engine with large sized data yet. For
@@ -58,7 +58,7 @@ Currently, this module uses the default N-gram parser. MeCab or any parsers are 
 Licensing information
 ---------------------
 
-Copyright (c) 2020 Kentaro Fukuchi
+Copyright (c) 2020, 2021 Kentaro Fukuchi
 
 This module is released under the MIT License. See the `LICENSE` file for the
 details.

@@ -6,7 +6,7 @@
  * or MariaDB must be installed and configured.
  *
  *
- * @copyright Kentaro Fukuchi, 2020
+ * @copyright Copyright (c) 2020, 2021 Kentaro Fukuchi
  * @license MIT License
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -36,7 +36,7 @@ use Omeka\Stdlib\Message;
 use Omeka\Mvc\Controller\Plugin\Messenger;
 use Doctrine\DBAL\Connection;
 use Doctrine\ORM\Query\ResultSetMapping;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class Module extends AbstractModule
 {
