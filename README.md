@@ -5,11 +5,11 @@ Mroonga search is a module for [Omeka S](https://omeka.org/s/) that enables
 CJK-ready full-text search by activating the [Mroonga](https://mroonga.org/)
 plugin of MySQL or MariaDB.
 
-The default installation of the full-text search feature of the Omeka-S is not
+The default installation of the full-text search feature of the Omeka S is not
 CJK (Chinese, Japanese, Korean) ready because of the limiation of the database
 engine (MySQL or MariaDB). The Mroonga plugin extend the database to achieve
 CJK-ready search. This module simply activates this plugin by modifying the
-table information that internally used by Omeka-S.
+table information that internally used by Omeka S.
 
 
 Installation
@@ -30,9 +30,9 @@ information.
 
 See the [release page](https://github.com/fukuchi/Omeka-S-module-mroonga-search/releases)
 and download the latest `MroongaSearch.zip` from the list. Then unzip it in the
-`modules` directory of Omeka-S, then enable the module from the admin
+`modules` directory of Omeka S, then enable the module from the admin
 dashboard. Read the
-[user manual of Omeka-S](https://omeka.org/s/docs/user-manual/modules/)
+[user manual of Omeka S](https://omeka.org/s/docs/user-manual/modules/)
 for further information.
 
 ### From GitHub
@@ -54,8 +54,8 @@ No additional work is needed.
 Notes
 -----
 
-This module highly depends on the database structure of Omeka-S 3.x. If you are
-upgrading Omeka-S from 3.x to 4.x or later, we highly recommend you to
+This module highly depends on the database structure of Omeka S 3.x. If you are
+upgrading Omeka S from 3.x to 4.x or later, we highly recommend you to
 uninstall this module **before upgrading**.
 
 We have not heavily tested Mroonga engine with large sized data yet. For
