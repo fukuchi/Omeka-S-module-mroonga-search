@@ -11,6 +11,7 @@ engine (MySQL or MariaDB). The Mroonga plugin extend the database to achieve
 CJK-ready search. This module simply activates this plugin by modifying the
 table information that internally used by Omeka-S.
 
+
 Installation
 ------------
 
@@ -24,7 +25,6 @@ enable Mroonga storage engine. For example, if you use MariaDB on Debian or
 Ubuntu machine, install 'mariadb-plugin-mroonga' package. Please read the
 [official document](https://mroonga.org/docs/install.html) for further
 information.
-
 
 ### From ZIP
 
@@ -40,6 +40,16 @@ for further information.
 Please do not forget to rename the directory from `Omeka-S-mroonga-search` to
 `MroongaSearch` in the `modules` directory.
 
+### Configuration
+
+No configuration is needed. Once installed, the database will be updated,
+enabling full-text search.
+
+### Uninstall
+
+Simply uninstall this module to remove Mroonga settings from your database.
+No additional work is needed.
+
 
 Notes
 -----
@@ -53,6 +63,16 @@ advanced full-text search, we recommend you to check the
 [Solr module](https://omeka.org/s/modules/Solr/).
 
 Currently, this module uses the default N-gram parser. MeCab or any parsers are not supported yet.
+
+### Technical note
+
+MroongaSearch module changes the storage engine of the fulltext\_search table of your Omeka S instance from InnoDB to Mroonga. This enables CJK-friendly fast full-text search, while it increases the size of the database.
+
+
+TODOs
+-----
+
+* Enabling synonyms
 
 
 Licensing information
